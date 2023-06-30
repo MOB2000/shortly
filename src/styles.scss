@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+ 
+$app-primary-color: rgb(43, 209, 209);
+$app-secondary-color: rgb(58, 48, 83) ;
+
+.app-primary-btn,
+.app-primary-btn:hover,
+.app-primary-btn:active,
+.app-primary-btn:visited {
+    @extend .btn;
+    @extend .text-white;
+    background-color: $app-primary-color !important;
+}
+
+.app-secondary-btn,
+.app-secondary-btn:hover,
+.app-secondary-btn:active,
+.app-secondary-btn:visited {
+    @extend .btn;
+    @extend .text-white;
+    background-color: $app-secondary-color !important;
+}
+
+
+
+.app-pill-btn {
+    @extend .app-primary-btn;
+    @extend .rounded-pill;
+}
+
+
+.app-rounded-btn {
+    @extend .app-primary-btn;
+    @extend .rounded;
+}

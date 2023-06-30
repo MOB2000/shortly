@@ -1,0 +1,23 @@
+<div class="shorten mx-auto w-75 px-1 py-md-4 rounded">
+
+    <form [formGroup]="form">
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 m-md-0 m-3">
+                <input class="form-control p-3 rounded" type="text" id="url" formControlName="url"
+                    placeholder="Shorten a link here..." />
+            </div>
+
+            <div class="col-md-2 m-md-0 m-3">
+                <button class="app-rounded-btn w-100 p-3" (click)="onSubmit()">Shorten It!</button>
+            </div>
+            
+        </div>
+        <div class="ms-5">
+            <p *ngIf="isShowError" class="text-danger">Enter a valid link</p>
+        </div>
+
+    </form>
+
+
+</div>

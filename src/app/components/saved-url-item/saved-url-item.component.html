@@ -1,0 +1,6 @@
+<div class="d-flex flex-wrap align-items-center mx-auto w-75 py-2 px-4 my-4 rounded bg-white">
+    <p class="flex-item me-auto fw-bold pt-3">{{url.original_link}}</p>
+    <p class="flex-item me-2 fw-bold text-original pt-3">{{url.full_short_link}}</p>
+    <button *ngIf="isShowCopy" class="flex-item app-primary-btn" (click)="copy(url.full_short_link)">Copy</button>
+    <button *ngIf="!isShowCopy" class="flex-item app-secondary-btn copied-btn" (click)="isShowCopy= true">Copied</button>
+</div> 

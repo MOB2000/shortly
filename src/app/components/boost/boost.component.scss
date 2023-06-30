@@ -1,0 +1,16 @@
+.bg-div {
+    background-color: rgb(58, 48, 83);
+    background-image: url('../../../assets/bg-boost-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.get-started-div {
+    max-width: 12%;
+}
+
+@media (max-width: 500px) {
+    .get-started-div {
+        max-width: 50%;
+    }
+}
